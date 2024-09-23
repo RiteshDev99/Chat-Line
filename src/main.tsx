@@ -10,24 +10,27 @@ import YourProfile from './components/yourProfile.tsx';
 import Chat from './components/chat.tsx';
 
 
+
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-   
-      
-      <BrowserRouter>
-        <div className="flex">
-          <NavigationBar />
-          <div className="content w-4/5">
-            <Routes>
-              <Route path="/" element={<DashBoard />} />
-              <Route path="/admin/dashBoard" element={<DashBoard />} />
-              <Route path="/admin/yourProfile" element={<YourProfile />} />
-              <Route path="/admin/chat" element={<Chat />} />
-            </Routes>
-          </div>
+
+
+    <BrowserRouter>
+      <div className="flex">
+        <NavigationBar />
+        <div className="content w-4/5">
+          <Routes>
+            <Route path="/" element={<DashBoard />} />
+            <Route path="/admin/dashBoard" element={<DashBoard />} />
+            <Route path="/admin/yourProfile" element={<YourProfile />} />
+            <Route path="/admin/chat" element={<Chat />} />
+            <Route path="/userChat" element={<Chat />} />
+          </Routes>
         </div>
-      </BrowserRouter>
-    
-   
+      </div>
+    </BrowserRouter>
+
+
   </React.StrictMode>,
 );

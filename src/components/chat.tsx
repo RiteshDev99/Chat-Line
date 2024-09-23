@@ -1,15 +1,20 @@
-import NavBar from "./navBar";
+
+import SideBar from "./sideBar";
+import UserChat from "./userChat";
 
 const Chat = () => {
     return (
         <>
-            <NavBar/>
-        
-            <div>
-                <h1>Chat Section</h1>
+            <div className="flex">
+                <SideBar />
+                <UserChat />
             </div>
-        
+
+
+
+
         </>
     );
 };
 export default Chat;
+
